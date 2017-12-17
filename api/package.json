@@ -1,0 +1,27 @@
+{
+  "name": "sensors",
+  "version": "0.1.0",
+  "author": "Wagner Camarao",
+  "main": "dist/index.js",
+  "private": true,
+  "scripts": {
+    "build": "rimraf dist/ && babel ./src --out-dir dist/ --ignore ./node_modules,./.babelrc,./package.json,./npm-debug.log --copy-files",
+    "start": "nodemon --ignore dist/ --ignore test/ --exec 'npm run build && node dist/index.js'",
+    "test": "mocha --require babel-register",
+    "watch": "mocha --require babel-register --watch"
+  },
+  "dependencies": {
+    "cors": "^2.8.4",
+    "express": "^4.16.2",
+    "lodash": "^4.17.4"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-register": "^6.26.0",
+    "chai": "^4.1.2",
+    "mocha": "^4.0.1",
+    "nodemon": "^1.12.7",
+    "rimraf": "^2.6.2"
+  }
+}

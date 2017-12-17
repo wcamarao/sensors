@@ -1,0 +1,27 @@
+{
+  "name": "sensors",
+  "version": "0.1.0",
+  "author": "Wagner Camarao",
+  "private": true,
+  "scripts": {
+    "build": "react-scripts build",
+    "start": "react-scripts start",
+    "test": "CI=true react-scripts test --env=jsdom",
+    "watch": "react-scripts test --env=jsdom"
+  },
+  "dependencies": {
+    "axios": "^0.17.1",
+    "bootstrap": "^3.3.7",
+    "lodash": "^4.17.4",
+    "prop-types": "^15.6.0",
+    "react": "^16.2.0",
+    "react-bootstrap": "^0.31.5",
+    "react-dom": "^16.2.0",
+    "react-scripts": "^1.0.17"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "eslint": "^4.13.1",
+    "eslint-plugin-react": "^7.5.1"
+  }
+}

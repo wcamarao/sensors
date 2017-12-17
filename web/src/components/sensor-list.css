@@ -1,0 +1,8 @@
+.sensor-list {
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+.sensor-list thead th:not(:first-child) {
+  text-align: right;
+}
